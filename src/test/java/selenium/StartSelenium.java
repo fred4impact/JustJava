@@ -36,7 +36,7 @@ public class StartSelenium {
        public void DisplayPage(){
            driver.get("https://www.saucedemo.com/");
            driver.manage().window().maximize(); // Maximize window
-           WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+           WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
        }
 
