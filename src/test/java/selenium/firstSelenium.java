@@ -19,6 +19,7 @@ public class firstSelenium {
 
     // Before Test
     // actions the need to happen before a test create a method
+
     @BeforeClass
     public void startBrowser(){
         //WebDriverManager.chromedriver().setup();
@@ -49,7 +50,7 @@ public class firstSelenium {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 
         // WebElements Commands
-        // WebElements Commands
+
         // username
         WebElement username = driver.findElement(By.name("user-name"));
         //WebElement username = driver.findElement(By.xpath("//input[@id='user-name']"));
@@ -65,9 +66,15 @@ public class firstSelenium {
         WebElement loginButton = driver.findElement(By.id("login-button"));
         loginButton.click();
 
+        WebElement product1 = driver.findElement(By.linkText("Sauce Labs Backpack"));
 
 
-        //
+//         String logo = driver.getTitle();
+//         WebElement logo driver.findElement(By.className("app_logo"));
+//         String getLogText = logo.getText();
+
+
+
     }
 
 
